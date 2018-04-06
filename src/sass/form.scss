@@ -1,0 +1,67 @@
+.form {
+  display: block;
+  text-align: center;
+  //width: rem(360);
+  //border-style: solid black 1px;
+
+&__headline {
+  padding-top: rem(36);
+  margin-bottom: rem(22);
+}
+  &__title {
+    margin-bottom: rem(30);
+    font-size: rem(30);
+  }
+
+  &__apply {
+    text-align: center;
+    display: inline-block;
+
+  }
+
+  &__text {
+    width: prc(250, 360);
+    display: block;
+    margin: auto;
+
+
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  input[type=text] {
+    width: prc(320, 360);
+    padding:rem(16);
+    text-align: center;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: rem(40);
+    margin-bottom: rem(10);
+    font-size: rem(18);
+    color: black;
+    text-transform: capitalize;
+
+  }
+  input[type=email] {
+    width: 90%;
+    padding:rem(16);
+    text-align: center;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: rem(40);
+    margin-bottom: rem(20);
+    font-size: rem(18);
+    text-transform: capitalize;
+
+  }
+  ::placeholder {
+    color: black;
+
+  }
+
+  input[type=submit] {
+    width: 90%;
+  }
+}
