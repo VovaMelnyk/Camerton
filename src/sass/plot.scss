@@ -1,17 +1,10 @@
-.container {
-  max-width: rem(1220);
-  min-width: rem(320);
-  padding: 0 rem(16);
-  margin: 0 auto;
-}
-
 .wrapper--bg-img {
   background-image: url("../img/wrapper-img-bg.jpg");
   @include bg-img;
 }
 
 .plot {
-  padding: rem(20) 0;
+  padding: 2rem 0;
 
   &__container {
     &--top {
@@ -29,21 +22,20 @@
     color: $white;
     text-align: center;
     margin: 0 auto rem(60);
-
-
   }
 
   &__comments {
+    font-family: $affect;
     color: $white;
     text-transform: uppercase;
     margin: 0 auto rem(18);
-    font-size: rem(30);
+    font-size: rem(20);
 
   }
 
   &__span {
     &--small {
-      margin-right: rem(15);
+      margin-right: rem(5);
     }
   }
 
@@ -62,9 +54,10 @@
   }
 
   &__sub-title {
+    font-family: $affect;
     color: $white;
     text-transform: uppercase;
-    font-size: rem(18);
+    font-size: rem(14);
 
     &--top {
       margin: 0 auto rem(34);
@@ -80,30 +73,39 @@
     margin: 0 auto rem(34);
   }
 
-  &__item {
-    color: $white;
+  &__li {
+    position: relative;
     margin: 0 auto rem(10);
-    font-weight: 400;
-
-    &::before {
-      display: inline-block;
-      content: "";
-      width: rem(50);
-      height: rem(50);
-      background-image: url("../img/svg/check-2.svg");
-      opacity: 1;
-      z-index: 5;
-
-    }
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
+  &__item {
+    color: $white;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 80%;
+
+    &:before {
+      position: absolute;
+      top: rem(6);
+      left: rem(-6);
+      display: block;
+      content: "";
+      width: rem(23);
+      height: rem(23);
+      background-image: url("../img/svg/check-2.svg");
+      background-repeat: no-repeat;
+    }
+
+  }
+
   &__picture {
     display: block;
     margin: auto;
+
     &--first {
       margin: 0 auto rem(10);
     }
@@ -115,13 +117,29 @@
 
 }
 
-@media (min-width: 480px) {
 
+
+@media (min-width: 480px) {
+  .plot {
+    &__span {
+      &--small {
+        margin-right: rem(15);
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
   .plot {
-    padding: rem(.125);
+    padding: 3rem 0;
 
     &__container {
       &--top {
@@ -142,17 +160,20 @@
     }
 
     &--practice {
-      flex-basis: 60%;
+      flex-basis: 57%;
     }
 
   }
 
   &__image-block {
-    flex-basis: 36%;
+    flex-basis: 42%;
+    align-self: center;
+    padding: rem(40) 0 0;
 
     &--second {
       flex-basis: 40%;
       margin: 0;
+      align-self: center;
     }
   }
 
@@ -196,28 +217,74 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .plot {
-    padding: rem(0.825) 0;
-    &__title {
 
+@media (min-width: 960px)  {
+  .plot {
+   padding: 5.375rem 0;
+    &__item {
+      width: 90%;
     }
 
     &__comments {
       font-size: rem(30);
     }
 
-
-
-    &__text {
-
-    }
-
     &__sub-title {
-
-
-
+      font-size: rem(18);
     }
 
   }
+
 }
+
+@media (min-width: 1200px) {
+  .plot {
+
+    &__block {
+      &--motivation {
+        flex-basis: 58%;
+      }
+
+      &--practice {
+        flex-basis: 60%;
+      }
+    }
+
+    &__image-block {
+      flex-basis: 37%;
+      align-self: flex-start;
+      padding: 0;
+
+      &--second {
+        flex-basis: 50%;
+      }
+    }
+
+    &__picture {
+      margin: 0;
+
+      &--first {
+        top: 2.5rem;
+      }
+
+      &--second {
+        top:  rem(0);
+        left: rem(-50) ;
+      }
+
+      &--third {
+        padding: 0;
+      }
+    }
+
+    &__comments {
+      font-size: rem(30);
+    }
+
+    &__sub-title {
+        font-size: rem(18);
+      }
+
+    }
+  }
+
