@@ -31,26 +31,26 @@
         text-transform: uppercase;
         text-align: center;
         color: $white;
-        border: rem(1) solid $orange;
+        border: rem(2) solid $orange;
         border-radius: rem(40);
         }
     &__top-right {
         text-align: center;
         }
     &__top {
-        margin: 0 0 rem(30);
+        margin: 0 0 rem(48);
     }
     &__location {
         font-size: rem(10);
         color: $white;
         text-align: center;
-        margin: 0 0 rem(10);
+        margin: 0 0 rem(20);
         }
     &__title {
         color: $white;
         font-size: rem(17);
         text-align: center;
-        margin: 0 0 rem(10);
+        margin: 0 0 rem(20);
     }
     &__sub-title {
         color: $white;
@@ -69,7 +69,7 @@
     &--btn {
         font-size: rem(10);
         padding: rem(10) rem(12);
-        width: 43%;
+        width: 50%;
     }
 }
 
@@ -142,7 +142,7 @@
         &__top-right {
             display: flex;
             justify-content: space-between;
-            flex-basis: 60%;
+            flex-basis: 65%;
             align-items: center;
         }
         &__application {
@@ -150,7 +150,6 @@
             padding: rem(6) rem(10);
             flex-basis: 27%;
             margin: 0;
-            align-self: flex-start;
         }
         &--btn {
             font-size: rem(14);
@@ -194,10 +193,10 @@
             padding: rem(16) rem(22);
             font-size: rem(18);
             border: rem(3) solid $orange;
-            flex-basis: 28%;
+            flex-basis: 30%;
             }
         &__top-right {
-            flex-basis: 70%;
+            flex-basis: 72%;
             }
 
         &__location {
@@ -221,6 +220,9 @@
         &__link {
             font-size: rem(18);
         }
+    }
+    .nav { 
+        flex-basis: 46%;
     }
     .phone {
         font-size: rem(18);
