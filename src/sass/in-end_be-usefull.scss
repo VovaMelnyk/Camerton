@@ -1,0 +1,137 @@
+.in-end {
+  text-align: center;
+  margin-bottom: rem(76);
+
+  // первый контейнер в котоом картинка+ тайтл+сабтекст+задний фон
+  &__article-first {
+    margin-bottom: rem(76);
+    padding: rem(35) 0 rem(50) 0;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.364)),
+    url("../img/in-end.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: rem(5);
+    box-shadow: 0 0.5rem 1.7625rem 0 grey;
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.364)),
+      url("../img/in-end.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      border-radius: rem(5);
+    }
+  }
+  // картинка часы
+  &__svg {
+    display: block;
+    height: rem(98);
+    width: rem(98);
+    margin: 0 auto rem(63);
+  }
+
+  // цвет для главного тайтла
+  &__white {
+    color: $white;
+    margin-bottom: rem(57);
+  }
+  //задаю толщину и цвет для саб тайтла 33
+  &__title-white {
+    font-family: $affect;
+    font-size: rem(12);
+    color: $white;
+    font-weight: 700;
+    margin-bottom: rem(50);
+  }
+
+  &__normal {
+    font-weight: 400;
+  }
+
+  // контейнер справа с кнопкой
+  &__title-second {
+    margin-bottom: rem(45);
+  }
+  // перебиваем стили элементом для  общего саба
+  &__sub-title {
+    font-family: $affect;
+    font-size: rem(12);
+    color: $black;
+    font-weight: 700;
+    margin-bottom: rem(50);
+  }
+
+  &__btn {
+    width: 95%;
+    font-size: rem(12);
+
+    &:hover {
+      color: #FF4C01;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .in-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(76);
+
+    &__article-first {
+      margin-bottom: 0;
+      padding: rem(35) 0 rem(50) 0;
+      flex-basis: 45%;
+    }
+
+    &__article {
+      //padding: rem(50) 0;
+      flex-basis: 45%;
+    }
+    &__btn {
+      width: 97%;
+      font-size: rem(12);
+    }
+  }
+}
+
+// секция номмер 2
+
+.be-usefull {
+  text-align: center;
+  margin-bottom: rem(76);
+
+  &__title {
+    margin-bottom: rem(76);
+  }
+
+  &__img-svg {
+    display: block;
+    height: rem(145);
+    width: rem(145);
+    margin-bottom: rem(47);
+
+  }
+}
+
+@media (min-width: 768px) {
+  .be-usefull {
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__article {
+      flex-basis: 28%;
+    }
+    &__title {
+      margin-bottom: rem(76);
+    }
+  }
+}
