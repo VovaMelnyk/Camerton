@@ -56,3 +56,9 @@ img {
   font-weight: 400;
 }
 
+.container {
+  max-width: rem(1120);
+  min-width: rem(320);
+  margin: auto;
+  padding: 0 rem(24);
+}
