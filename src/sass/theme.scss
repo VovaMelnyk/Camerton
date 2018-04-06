@@ -19,5 +19,40 @@ img {
   max-width: 100%;
   height: auto;
   margin: auto;
-
 }
+
+.title {
+  font-family: $affect;
+  font-size: rem(40);
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.orange {
+  color: $orange;
+}
+
+.sub-title {
+  font-family: $affect;
+  font-size: rem(24);
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.text {
+  font-family: $proxima;
+  font-size: rem(18);
+  color: $black;
+  font-weight: 400;
+}
+
+.text--white {
+  font-family: $proxima;
+  font-size: rem(24);
+  color: $white;
+  font-weight: 400;
+}
+
