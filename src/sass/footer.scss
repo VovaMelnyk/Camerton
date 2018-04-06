@@ -17,6 +17,10 @@
 .ford {
   padding: rem(140) 0 rem(55);
 
+  & > .btn {
+    font-size: rem(12);
+  }
+
   &__quote {
     margin: 0 auto rem(33);
     background-color: rgba(0, 0, 0, .5);
