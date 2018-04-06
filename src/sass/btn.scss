@@ -1,0 +1,23 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: prc(400, 1140);
+  padding: rem(19) rem(22);
+  font-family: $affect;
+  font-size: rem(18);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background-image: linear-gradient(to top, #ff4c01, #e77921);
+  border: rem(1) solid transparent;
+  border-radius: rem(40);
+  transition: .2s;
+
+  &:hover {
+    background-image: none;
+    background-color: transparent;
+    border: rem(1) solid #ff4c01;
+    border-top: rem(1) solid #e77921;
+  }
+}
