@@ -16,3 +16,10 @@ $black: #000;
 $affect: "Affect", sans-serif;
 $proxima: "Proxima Nova", sans-serif;
 
+
+@mixin bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
