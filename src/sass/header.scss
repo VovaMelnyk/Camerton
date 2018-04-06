@@ -1,2 +1,243 @@
-// <source srcset='img/canoe.jpg 1x, img/canoe@2x.jpg 2x'>
-// <img src="img/canoe.png" alt="graph">
+.wrapper--header {
+    padding: rem(12) 0 rem(70); 
+    background-color: #383835;
+    background-image: url("../img/canoe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .wrapper--header {
+            margin: rem(10) 0 0; 
+            background-color: #383835;
+            background-image: url("../img/canoe@2x.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+    }
+.header {
+
+    margin: 0 auto;
+    &__application {
+        display: inline-block;
+        margin: 0 auto;
+        padding: rem(10) rem(14);
+        font-family: $affect;
+        font-size: rem(12);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border: rem(1) solid $orange;
+        border-radius: rem(40);
+        }
+    &__top-right {
+        text-align: center;
+        }
+    &__top {
+        margin: 0 0 rem(30);
+    }
+    &__location {
+        font-size: rem(10);
+        color: $white;
+        text-align: center;
+        margin: 0 0 rem(10);
+        }
+    &__title {
+        color: $white;
+        font-size: rem(17);
+        text-align: center;
+        margin: 0 0 rem(10);
+    }
+    &__sub-title {
+        color: $white;
+        font-size: rem(10);
+        text-align: center;
+    }
+    &__middle {
+        margin: 0 0 rem(40);
+    }
+    &__date {
+        margin: 0 auto rem(20);
+        text-align: center;
+        display: flex;
+        width: rem(150);
+    }
+    &--btn {
+        font-size: rem(10);
+        padding: rem(10) rem(12);
+        width: 43%;
+    }
+}
+
+.menu {
+    display: none;
+    &__link {
+        font-family: $affect;
+        font-size: rem(18);
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+    }
+}
+
+.phone {
+    font-size: rem(16);
+    margin: rem(10) 0 rem(10);
+}
+
+.location {
+    fill: $orange;
+    width: rem(17);
+    height: rem(24);
+}
+.calendar {
+    display: block;
+    width: rem(35);
+    height: rem(45);
+}
+.date {
+    font-size: rem(16);
+    color: $white;
+    font-family: $affect;
+    font-weight: 700;
+    text-align: center;
+    width: rem(100);
+    margin: 0 auto;
+    line-height: rem(21);
+}
+@media (min-width: 768px) { 
+    .wrapper--header {
+        padding: rem(26) 0 rem(100);
+    }
+    .menu { 
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            flex-basis: 29%;
+        }
+        &__link {
+            font-size: rem(10);
+        }
+    }
+    .phone {
+        font-size: rem(12);
+        margin: 0;
+        flex-basis: 22%;
+        line-height: rem(22);
+    }
+    .nav {
+        flex-basis: 43%;
+    }
+    .header {
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 rem(120);
+        }
+        &__top-right {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 60%;
+            align-items: center;
+        }
+        &__application {
+            font-size: rem(10);
+            padding: rem(6) rem(10);
+            flex-basis: 27%;
+            margin: 0;
+            align-self: flex-start;
+        }
+        &--btn {
+            font-size: rem(14);
+            padding: rem(12) rem(16);
+            width: 25%;
+            margin: 0;
+        }
+        &__sub-title {
+            width: prc(550, 768);
+            font-size: rem(12);
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: rem(30);
+            margin: 0 0 rem(60);
+        }
+        &__location {
+            font-size: rem(16);
+            margin: 0 0 rem(32);
+        }
+        &__middle {
+            margin: 0 0 rem(80);
+        }
+        &__bottom {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        &__date {
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+.wrapper--header {
+    padding: rem(26) 0 rem(134);
+}
+    .header {
+        &__application {
+            padding: rem(16) rem(22);
+            font-size: rem(18);
+            border: rem(3) solid $orange;
+            flex-basis: 28%;
+            }
+        &__top-right {
+            flex-basis: 70%;
+            }
+
+        &__location {
+            font-size: rem(30);
+            margin: 0 0 rem(68);
+
+            }
+        &__title {
+            margin: 0 0 rem(65);
+            font-size: rem(60);
+        }
+        &__sub-title {
+            font-size: rem(24);
+            width: prc(1100, 1200);
+        }
+        &__date {
+            width: rem(300);
+        }
+    }
+    .menu {
+        &__link {
+            font-size: rem(18);
+        }
+    }
+    .phone {
+        font-size: rem(18);
+    }
+    
+    .location {
+        width: rem(23);
+        height: rem(33);
+    }
+    .calendar {
+        width: rem(65);
+        height: rem(75);
+    }
+    .date {
+        font-size: rem(30);
+        width: rem(200);
+        margin: 0;
+        line-height: rem(32);
+    }
+}
