@@ -1,0 +1,114 @@
+
+.about-coach {
+  background-image: url(../img/bgi-7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: rem(120) 0;
+
+  &__box {
+    padding-top: rem(30);
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(40);
+  }
+
+  &__name {
+    color: $orange;
+    text-align: center;
+    margin-bottom: rem(50);
+  }
+
+  &__item {
+    position: relative;
+    padding-left: rem(40);
+    margin-bottom: rem(25);
+
+    &:last-child {
+      margin-bottom: rem(0);
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(../img/61343.png);
+      background-repeat: no-repeat;
+      width: 1.575rem;
+      height: 1.375rem;
+      left: rem(10);
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .about-coach {
+    &__title {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-coach {
+    flex-direction: row;
+    padding: 0;
+
+    &__img {
+      margin: 0;
+      width: 50%;
+      height: 50%;
+      align-self: flex-end;
+    }
+
+    &__box {
+      flex-basis: 45%;
+    }
+
+    &__menu {
+      padding-bottom: rem(20);
+    }
+
+
+    &__item {
+
+      &:before {
+        left: -0.475rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .about-coach {
+    justify-content: center;
+
+    &__img {
+      width: auto;
+      height: auto;
+    }
+
+    &__box {
+      padding: 0;
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-coach {
+    &__box {
+      flex-basis: 47%;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+
+.our-clients {
+  padding: rem(16) 0;
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item {
+    margin-bottom: rem(20);
+
+    &:last-child {
+      margin-bottom: rem(0);
+    }
+  }
+}
+
+.colgate {
+  background-image: url(../img/css_sprites.png);
+  width: 209px;
+  height: 155px;
+  flex-basis: rem(209);
+}
+
+.stb {
+  background: url(../img/css_sprites.png) -239px -10px;
+  width: 175px;
+  height: 114px;
+  flex-basis: rem(175);
+}
+
+.agricom {
+  background: url(../img/css_sprites.png) -406px -448px;
+  width: 167px;
+  height: 36px;
+  flex-basis: rem(167);
+}
+
+.appetit {
+  background: url(../img/css_sprites.png) -434px -117px;
+  width: 111px;
+  height: 111px;
+  flex-basis: rem(111);
+}
+
+.leroy {
+  background: url(../img/css_sprites.png) -434px -248px;
+  width: 123px;
+  height: 78px;
+  flex-basis: rem(123);
+}
+
+.sigma {
+  background: url(../img/css_sprites.png) -10px -365px;
+  width: 195px;
+  height: 63px;
+  flex-basis: rem(195);
+}
+
+.darwin {
+  background: url(../img/css_sprites.png) -602px -10px;
+  width: 95px;
+  height: 82px;
+  flex-basis: rem(95);
+}
+
+.bitrix {
+  background: url(../img/css_sprites.png) -10px -570px;
+  width: 151px;
+  height: 36px;
+  flex-basis: rem(151);
+}
+
+.kyivstar {
+  background: url(../img/css_sprites.png) -10px -185px;
+  width: 207px;
+  height: 72px;
+  flex-basis: rem(207);
+}
+
+.tac {
+  background: url(../img/css_sprites.png) -233px -277px;
+  width: 164px;
+  height: 54px;
+  flex-basis: rem(164);
+}
+
+.answer {
+  background: url(../img/css_sprites.png) -237px -185px;
+  width: 158px;
+  height: 60px;
+  flex-basis: rem(158);
+}
+
+.carlsberg {
+  background: url(../img/css_sprites.png) -434px -10px;
+  width: 148px;
+  height: 87px;
+  flex-basis: rem(148);
+}
+
+.keynas {
+  width: 145px;
+  height: 41px;
+  background: url(../img/css_sprites.png) -426px -365px;
+  flex-basis: rem(145);
+}
+
+.octava {
+  width: 203px;
+  height: 68px;
+  background: url(../img/css_sprites.png) -10px -277px;
+  flex-basis: rem(203);
+}
+
+.mim-kyiv {
+  width: 108px;
+  height: 102px;
+  background: url(../img/css_sprites.png) -10px -448px;
+  flex-basis: rem(108);
+}
+
+.vodafone {
+  width: 181px;
+  height: 41px;
+  background: url(../img/css_sprites.png) -225px -365px;
+  flex-basis: rem(181);
+}
+
+.international {
+  width: 101px;
+  height: 81px;
+  background: url(../img/css_sprites.png) -138px -448px;
+  flex-basis: rem(101);
+}
+
+.sirena {
+  width: 127px;
+  height: 58px;
+  background: url(../img/css_sprites.png) -259px -448px;
+  flex-basis: rem(127);
+}
