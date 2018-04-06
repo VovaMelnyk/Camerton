@@ -56,6 +56,7 @@
         color: $white;
         font-size: rem(10);
         text-align: center;
+        line-height: rem(14);
     }
     &__middle {
         margin: 0 0 rem(40);
@@ -72,9 +73,10 @@
         width: 50%;
     }
 }
-
-.menu {
+.nav {
     display: none;
+}
+.menu {
     &__link {
         font-family: $affect;
         font-size: rem(18);
@@ -86,6 +88,7 @@
 
 .phone {
     font-size: rem(16);
+    font-family: 'Myriad pro', sans-serif;
     margin: rem(10) 0 rem(10);
 }
 
@@ -114,7 +117,6 @@
         padding: rem(26) 0 rem(100);
     }
     .menu { 
-        display: block;
         display: flex;
         justify-content: space-between;
         &__item {
@@ -127,10 +129,11 @@
     .phone {
         font-size: rem(12);
         margin: 0;
-        flex-basis: 22%;
+        flex-basis: 24%;
         line-height: rem(22);
     }
     .nav {
+        display: block;
         flex-basis: 43%;
     }
     .header {
@@ -161,6 +164,8 @@
             width: prc(550, 768);
             font-size: rem(12);
             margin: 0 auto;
+            line-height: rem(16);
+
         }
         &__title {
             font-size: rem(30);
@@ -206,11 +211,14 @@
             }
         &__title {
             margin: 0 0 rem(65);
-            font-size: rem(60);
+            font-size: rem(58);
+
         }
         &__sub-title {
             font-size: rem(24);
             width: prc(1100, 1200);
+            line-height: rem(30);
+
         }
         &__date {
             width: rem(300);
