@@ -1,4 +1,4 @@
-'use strict';
+-'use strict';
 
 // В переменные получаем установленные пакеты
 const gulp = require('gulp');
@@ -105,7 +105,10 @@ gulp.task('images', () =>
 gulp.task('fonts', () =>
   gulp.src('./src/fonts/**/*.{woff,woff2}').pipe(gulp.dest('./build/fonts')),
 );
-
+gulp.task ('js', () => {
+  return gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./build/js'))
+})
 // Таск слежения за изменениями файлов
 gulp.task('watch', () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
@@ -143,7 +146,7 @@ gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
 // Таск который 1 раз собирает все статические файлы
 // Запускается из корня проекта командой npm run build
 gulp.task('build', cb => {
-  sequence('del:build', 'svg-sprite', 'images', 'fonts', 'css', 'html', cb);
+  sequence('del:build', 'svg-sprite', 'images', 'fonts', 'css', 'html','js', cb);
 });
 
 // Главный таск для разработки, сначала удаляет папку build,
