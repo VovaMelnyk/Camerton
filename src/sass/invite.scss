@@ -1,4 +1,5 @@
 .section__coach {
+  //display: flex;
   margin: 0 0 rem(65);
 }
 
@@ -11,11 +12,19 @@
 }
 
 .coach__face{
+  display: none;
   background-image: url(../img/IMG_1447.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: rem(802);
+  //width: rem(802);
+}
+
+@media  (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
+{
+  .wrapp--img {
+    background-image: url(../img/IMG_1447@2x.jpg);
+  }
 }
 
 .coach__quote{
@@ -24,7 +33,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: rem(50) rem(40) rem(50);
-  border-radius: rem(10) 0 0 rem(10);
+}
+
+@media  (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
+{
+  .wrapp--img {
+    background-image: url(../img/Прямокутник-5копія 2@2x.jpg);
+  }
 }
 
 .quote__text{
@@ -60,7 +75,7 @@
   margin: 0 0 rem(10);
 }
 
-.body__charter:last-child{
+.body__charter:nth-last-child(-n+1){
   margin: 0;
 }
 
@@ -93,10 +108,6 @@
     flex-wrap: wrap;
   }
 
-  .quote{
-    padding: rem(50) rem(150) rem(50) rem(40);
-  }
-
   .body__charter{
     flex-basis: 45%;
 
@@ -106,49 +117,46 @@
   }
 
   .quote__text{
-    font-size: rem(12);
-    margin: 0 0 rem(36.4);
+    font-size: rem(24);
+    margin: 0 0 1.75rem;
   }
 
   .section__coach{
     display: flex;
-    min-height: rem(760);
-    margin: 0 0 rem(33);
+    margin: 0 0 rem(95);
   }
 
   .coach__face{
     display: block;
-    position: absolute;
-    width: 50%;
-    min-height: 60%;
+    position: relative;
+    top: rem(24);
+    flex-basis: 60%;
     border-radius: 0 .625rem  .625rem 0;
+
   }
 
   .coach__quote{
-    position: absolute;
-    width: 54%;
-    top: rem(-24);
-    right: 0;
-
+    flex-basis: 54%;
+    margin-left: rem(-40);
+    z-index: 1;
+    padding: rem(50) 5.375rem rem(95) rem(40);
+    border-radius: rem(10) 0 0 rem(10);
   }
 }
 
 @media (min-width: 1200px) {
   .section__coach {
-    min-height: rem(760);
-  }
-
-  .quote{
-    padding: rem(114) rem(224) rem(50) rem(72);
+    //min-height: rem(760);
   }
 
   .coach__quote{
-    top: rem(-90);
+
+    padding: 3.125rem rem(160) rem(95) rem(72);
   }
 
   .quote__text {
-    font-size: rem(18);
-    margin: 0 0 rem(24);
+    font-size: rem(24);
+    margin: 0 0 rem(20);
   }
 
   .invite__body {
