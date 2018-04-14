@@ -1,9 +1,10 @@
 .comments {
   margin: auto;
+  padding: 0 0 rem(45) 0;
 
   &__box {
     padding: rem(25) rem(20);
-    margin: rem(24) auto rem(57);
+    margin: rem(24) auto rem(30);
     -webkit-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
     -moz-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
     box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
@@ -21,7 +22,8 @@
     -webkit-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
     -moz-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
     box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
-    width: 74%;
+    width: 85%;
+    font-size: rem(15);
 
     &:hover {
       color: $orange;
@@ -31,7 +33,7 @@
 
   &__btn-direction {
     outline: none;
-    display: block;
+    display: none;
     margin: 0 auto;
     padding: rem(16) rem(29.696);
     font-family: $affect;
@@ -51,8 +53,12 @@
 
 .client {
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
+
+  &__sub-title {
+    font-size: rem(15);
+  }
 
   &__img {
     border-radius: 50%;

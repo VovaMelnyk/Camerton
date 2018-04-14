@@ -4,11 +4,10 @@
 }
 
 .plot {
-  padding: 2rem 0;
-
+  padding: rem(45) 0;
   &__container {
     &--top {
-      margin: 0 auto rem(80);
+      margin: 0 auto rem(50);
     }
 
     &--bottom {
@@ -21,7 +20,7 @@
   &__title {
     color: $white;
     text-align: center;
-    margin: 0 auto rem(60);
+    margin: 0 auto rem(30);
   }
 
   &__comments {
@@ -29,7 +28,7 @@
     color: $white;
     text-transform: uppercase;
     margin: 0 auto rem(18);
-    font-size: rem(20);
+    font-size: rem(15);
 
   }
 
@@ -45,11 +44,11 @@
     font-weight: 400;
 
     &--up {
-      margin: 0 auto rem(55);
+      margin: 0 auto rem(40);
     }
 
     &--bottom {
-      margin: 0 auto rem(55);
+      margin: 0 auto rem(40);
     }
   }
 

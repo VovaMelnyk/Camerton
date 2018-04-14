@@ -1,0 +1,79 @@
+.main {
+  background-image: url("../img/wrapper-img-bg.jpg");
+  @include bg-img;
+  padding: rem(50) rem(40);
+}
+
+.sorrow {
+  display: none;
+}
+
+.busy__orange {
+  font-family: $affect;
+  text-transform: uppercase;
+  color: $orange;
+  margin-bottom: rem(37);
+  text-align: left;
+  font-weight: 700;
+}
+
+.text {
+  &--white {
+    margin-bottom: rem(37);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+
+  .busy {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+  .sorrow {
+    display: block;
+    flex-basis: 65%;
+    position: relative;
+    top: -40px;
+  }
+  .text {
+    &__up {
+      margin-top: rem(37);
+    }
+  }
+
+  .main {
+    flex-basis: 60%;
+    margin-left: -16px;
+    padding: 5px 20px;
+    z-index: 1;
+    text-align: left;
+  }
+}
+
+@media(min-width: 1024px) {
+  .text--white {
+    font-size: rem(19);
+  }
+  .busy {
+
+    &__orange {
+      font-size: rem(19);
+    }
+  }
+}
+
+//flex-basis: 50%;
+// position: relative;
+// top: 16px
+
+.text {
+
+  &--white {
+    font-size: 0.9rem;
+    //padding: rem(140) 0 rem(100);
+  }
+}

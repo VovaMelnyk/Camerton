@@ -1,6 +1,6 @@
 .reason{
   text-align: center;
-  padding: rem(108) 0 rem(172);
+  padding: rem(45) 0 rem(45);
 
   &__title{
     margin-bottom: rem(30);
@@ -8,19 +8,24 @@
 
   &__text{
     margin-bottom: rem(30);
+    font-weight: 700;
   }
 }
 .list{
   flex-basis: 100%;
-  padding-bottom: rem(30);
+  margin-bottom: rem(30);
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &__img{
-    width: 45%;
-    margin-bottom: rem(30);
+    width: rem(120);
+    height: rem(120);
+    margin: 0 auto rem(30);
   }
 }
 .sub-title--big{
-  font-size: rem(27);
+  font-size: rem(15);
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 .in-end {
   text-align: center;
-  margin-bottom: rem(76);
+  margin-bottom: rem(50);
+  padding: rem(45) 0 0;
 
   // первый контейнер в котоом картинка+ тайтл+сабтекст+задний фон
   &__article-first {
@@ -30,9 +31,9 @@
   // картинка часы
   &__svg {
     display: block;
-    height: rem(98);
-    width: rem(98);
-    margin: 0 auto rem(63);
+    height: rem(120);
+    width: rem(120);
+    margin: 0 auto rem(45);
   }
 
   // цвет для главного тайтла
@@ -60,11 +61,12 @@
   &__sub-title {
     text-transform: inherit;
     margin-bottom: rem(50);
+    font-size: rem(15);
   }
 
   &__btn {
     width: 95%;
-    font-size: 0.625rem;
+    font-size: rem(11);
 
     &:hover {
       color: #FF4C01;
@@ -140,17 +142,17 @@
 
 .be-usefull {
   text-align: center;
-  margin-bottom: rem(76);
+  margin-bottom: rem(45);
 
   &__article {
-    margin-bottom: rem(76);
+    margin-bottom: rem(30);
 
     &:last-child {
       margin-bottom: 0;
     }
   }
   &__title {
-    margin-bottom: rem(76);
+    margin-bottom: rem(30);
   }
 
   &__img-svg {

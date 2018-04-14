@@ -29,6 +29,17 @@ img {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: rem(16);
+  }
+
+  .text {
+    font-size: rem(14);
+
+  }
+}
+
 .title--white {
   font-family: $affect;
   font-size: rem(40);
@@ -75,7 +86,7 @@ img {
   text-decoration: none;
   position: fixed;
   bottom: rem(50);
-  right: rem(40);
+  right: rem(8);
   display: none;
   background: rgba(255,255,255,.75);
   border-radius: 50%;
@@ -88,12 +99,4 @@ img {
   cursor: pointer;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: auto;
-  z-index: 5;
-  background-color: rgba(0,0,0,0.8);
-}
+
