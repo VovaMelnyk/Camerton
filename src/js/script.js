@@ -28,10 +28,10 @@ document.querySelector(".scrollToTop").addEventListener('click', topFunction);
 // };
 
 // Get the navbar
-var navbar = document.querySelector(".header__top");
+let navbar = document.querySelector(".header__top");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyFunction() {
@@ -82,3 +82,31 @@ $(document).ready(function(){
     //   }]
 });
 });
+ // modal
+
+
+let modal = document.querySelector('.modal');
+let open = document.querySelectorAll('.btn');
+let close = document.querySelector('.close');
+let buttons = Array.from(open);
+
+function show() {
+  modal.style.display = "block";
+  // modal.style.opacity = 1;
+}
+function hide() {
+  modal.style.display = "none";
+  // modal.style.opacity = 0;
+}
+buttons.forEach(function (item) {
+  item.addEventListener('click', show);
+});
+
+close.addEventListener('click', hide);
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
