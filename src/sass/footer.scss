@@ -5,6 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: rem(45) 0 0;
   }
 }
 
@@ -18,7 +19,9 @@
   padding: rem(140) 0 rem(55);
 
   & > .btn {
-    font-size: rem(12);
+    font-size: rem(11);
+    line-height: rem(15);
+    outline: none;
   }
 
   &__quote {
@@ -29,14 +32,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: rem(16);
 
     & > .text {
-      font-size: rem(36);
-      padding-bottom: rem(40);
-
+      font-size: rem(20);
       &--orange {
         color: $orange;
-        font-size: rem(30);
+        font-size: rem(20);
         text-transform: uppercase;
         padding: 0;
       }
@@ -77,25 +79,38 @@
       width: 88%;
       padding: rem(55) rem(45);
     }
+
+    > .btn {
+      width: rem(300);
+    }
   }
 
-.footer {
+  .footer {
     &__nav {
-    min-height: rem(40);
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+      min-height: rem(40);
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
 
-  &__item--logo {
-    order: 0;
-  }
+    &__item--logo {
+      order: 0;
+    }
 
-  &__link {
-    margin-bottom: rem(25);
+    &__link {
+      margin-bottom: rem(25);
+    }
   }
 }
+
+@media (min-width: 960px) {
+  .ford {
+    &__quote > .text {
+      font-size: rem(28);
+    }
+  }
 }
+
 
 @media (min-width: 1200px) {
   .ford {

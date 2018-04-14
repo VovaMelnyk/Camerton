@@ -115,6 +115,7 @@ gulp.task('watch', () => {
   gulp.watch('./src/*.html', ['html']);
   // Следим за изменениями в любом sass файле и вызываем таск 'css' на каждом изменении
   gulp.watch('./src/sass/**/*.scss', ['css']);
+  gulp.watch('./src/js/**/*.js', ['js']);
 });
 
 // Таск создания и запуска веб-сервера

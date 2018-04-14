@@ -46,11 +46,11 @@
 
 @media (min-width: 768px) {
   .office {
-    padding: rem(90) 0 0;
-    margin: 0 0 rem(160);
+    padding: rem(90) 0;
     &__title {
       margin: 0 auto rem(55);
       width: rem(332);
+      font-size: rem(20);
     }
     &__text {
       text-align: center;
@@ -71,7 +71,7 @@
 @media (min-width: 1200px) {
   .office {
     padding: rem(160) 0 0;
-    margin: 0 0 rem(240);
+    margin: 0 0 rem(200);
     &__title {
       margin: 0 auto rem(80);
       font-size: rem(40);

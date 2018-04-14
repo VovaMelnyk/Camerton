@@ -24,9 +24,9 @@
         <div class="header__top-right">
           <nav class='nav'>
             <ul class="menu">
-              <li class="menu__item"><a href="" class="menu__link">программа</a></li>
-              <li class="menu__item"><a href="" class="menu__link">кто ведет</a></li>
-              <li class="menu__item"><a href="" class="menu__link">отзывы</a></li>
+              <li class="menu__item"><a href="#plot" class="menu__link">программа</a></li>
+              <li class="menu__item"><a href="#coach" class="menu__link">кто ведет</a></li>
+              <li class="menu__item"><a href="#comments" class="menu__link">отзывы</a></li>
             </ul>
           </nav>
           <p class="phone orange">+38 (093) 864 35 72</p>
@@ -37,7 +37,7 @@
         <p class="sub-title header__location">Живой практический тренинг <span><svg class="location"><use
           href="img/sprite.svg#25613"></use></svg></span> в Киеве
         </p>
-        <h2 class="title header__title">Сильная команда для бизнеса</h2>
+        <h1 class="title header__title">Сильная команда для бизнеса</h1>
         <p class="sub-title header__sub-title">Как из сотрудников, которые приходят поклацать в соцсетях с 9 до 18 за
           ваш счет, <span class="orange">создать сплоченную команду с горящими глазами</span>, готовую брать
           ответственность за результат и достигать поставленных целей</p>
@@ -100,17 +100,17 @@
 <div class="wrapper wrapper--busy">
   <section class="busy">
     <div class="sorrow">
-      <picture>
-        <source srcset="img/Шар-5копія-2.jpg 1x, img/Шар-5копія-2@2x.jpg 2x">
-        <img src="img/Шар-5копія-2.jpg" alt="man">
-      </picture>
+      <!--<picture>-->
+        <!--<source srcset="img/Шар-5копія-2.jpg 1x, img/Шар-5копія-2@2x.jpg 2x">-->
+        <!--<img src="img/Шар-5копія-2.jpg" alt="man">-->
+      <!--</picture>-->
     </div>
     <div class="main">
       <p class="text text--white text__up">Вы прочитали с десяток книг по менеджменту, мотивации и управлению
         персоналом. Даже посетили несколько тренингов на эту тему.</p>
       <p class="text text--white">Перепробовали все, о чем слышали и читали: добавлять/урезать зарплату, мотивировать
         деньгами и подарками, быстро увольнять и долго терпеть "косяки" сотрудников...</p>
-      <p class="busy busy__orange">В ЧЕМ ЖЕ ТОГДА ДЕЛО?</p>
+      <p class="busy__orange">В ЧЕМ ЖЕ ТОГДА ДЕЛО?</p>
       <p class="text text--white">Почему ваша команда пока и близко не похожа на ту самую Dream Team, участники
         которой стоят друг за друга горой и вместе достигают сверхрезультатов?</p>
     </div>
@@ -204,7 +204,7 @@
 <div class="wrapper wrapper--bg-img">
   <div class="container">
     <!--padding for section not for wrapper-->
-    <section class="plot">
+    <section class="plot" id="plot">
       <h2 class="title plot__title"><span class="orange plot__span">Программа </span>тренинга</h2>
 
       <div class="plot__body">
@@ -397,7 +397,7 @@
 </div>
 <div class="wrapper wrapper--coach">
   <div class="container">
-    <section class="about-coach">
+    <section class="about-coach" id="coach">
       <img src="img/about-coach.png" alt="" class="about-coach__img">
       <div class="about-coach__box">
         <h2 class="title about-coach__title">
@@ -457,25 +457,44 @@
         <li class="our-clients__item sirena"></li>
       </ul>
     </section>
-    <section class="comments">
+    <section class="comments" id="comments">
       <h2 class="title comments__title">что<span class="orange"> говорят </span>о тренере</h2>
-      <div class="comments__box">
-        <p class="text">"Так получилось, что по роду своей деятельности я общаюсь со многими тренерами и психологами. У многих из низ есть одна существенная сложность - не справившись с собственными проблемами, они пытаются решить их через группу. Поработав с Павлом, я увидела человкека, который целиком и полностью работает на группу, на ваши задачи, цели и планы.</p>
-        <p class="text comments__text">Он не спасает себя через других людей. Он протягивает руку вам. Сильный, целостный и глубокий тренер, которому есть что отдать. Гараздо больше, чем можно ожидать. Мечту. Второе дыхание. Желание полета</p>
-        <div class="client">
-          <picture>
-            <source srcset="img/client@2x.jpg 2x, img/client.jpg 1x">
-            <img class="client__img" src="img/client.jpg" alt="client">
-          </picture>
-          <div class="client__info">
-            <h3 class="sub-title client__sub-title">елена юзькова</h3>
-            <p class="text client__sub-name">генеральный директор<span class="client__span">"эпоха интернационального образования"</span></p>
+      <div class="slick-container">
+        <div class="slick">
+          <div class="comments__box">
+            <p class="text">"Так получилось, что по роду своей деятельности я общаюсь со многими тренерами и психологами. У многих из низ есть одна существенная сложность - не справившись с собственными проблемами, они пытаются решить их через группу. Поработав с Павлом, я увидела человкека, который целиком и полностью работает на группу, на ваши задачи, цели и планы.</p>
+            <p class="text comments__text">Он не спасает себя через других людей. Он протягивает руку вам. Сильный, целостный и глубокий тренер, которому есть что отдать. Гараздо больше, чем можно ожидать. Мечту. Второе дыхание. Желание полета</p>
+            <div class="client">
+              <picture>
+                <source srcset="img/client@2x.jpg 2x, img/client.jpg 1x">
+                <img class="client__img" src="img/client.jpg" alt="client">
+              </picture>
+              <div class="client__info">
+                <h3 class="sub-title client__sub-title">елена юзькова</h3>
+                <p class="text client__sub-name">генеральный директор<span class="client__span">"эпоха интернационального образования"</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="comments__box">
+            <p class="text">"Так получилось, что по роду своей деятельности я общаюсь со многими тренерами и психологами. У многих из низ есть одна существенная сложность - не справившись с собственными проблемами, они пытаются решить их через группу. Поработав с Павлом, я увидела человкека, который целиком и полностью работает на группу, на ваши задачи, цели и планы.</p>
+            <p class="text comments__text">Он не спасает себя через других людей. Он протягивает руку вам. Сильный, целостный и глубокий тренер, которому есть что отдать. Гараздо больше, чем можно ожидать. Мечту. Второе дыхание. Желание полета</p>
+            <div class="client">
+              <picture>
+                <source srcset="img/client@2x.jpg 2x, img/client.jpg 1x">
+                <img class="client__img" src="img/client.jpg" alt="client">
+              </picture>
+              <div class="client__info">
+                <h3 class="sub-title client__sub-title">елена юзькова</h3>
+                <p class="text client__sub-name">генеральный директор<span class="client__span">"эпоха интернационального образования"</span></p>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="comments__btn-direction prev" >&lt;</button>
+        <button class="comments__btn-direction next">&gt;</button>
       </div>
+
       <button class="btn comments__btn">принять участие</button>
-      <button class="comments__btn-direction">&lt;</button>
-      <button class="comments__btn-direction">&gt;</button>
     </section>
   </div>
 </div>
@@ -510,7 +529,7 @@
           </ul>
         </div>
         <div class="format__pay">
-          <h3 class="sub-title">Но при оплате до ДАТА, стоимость составляет</h3>
+          <h3 class="sub-title">Но при оплате до 24 апреля, стоимость составляет</h3>
           <span class="format__price format__price--old">700<sup>грн</sup></span>
           <span class="format__price">600<sup>грн</sup></span>
           <button class="btn">Оплатить по выгодной цене</button>
@@ -548,7 +567,11 @@
     </section>
   </div>
 </div>
-<button href="#" class="scrollToTop">&#x21e7;</button>
+<button href="#" class="scrollToTop">
+  <img src="img/arrow-up-.svg" alt="top">
+</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

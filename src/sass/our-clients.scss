@@ -1,6 +1,7 @@
 
 .our-clients {
-  padding: rem(16) 0 rem(45);
+  padding: rem(16) 0 0;
+  margin: 0 0 rem(45) 0;
 
   &__menu {
     display: flex;
@@ -142,4 +143,17 @@
   height: 58px;
   background: url(../img/css_sprites.png) -259px -448px;
   flex-basis: rem(127);
+}
+
+@media (min-width: 768px) {
+  .our-clients {
+    margin: 0 0 rem(90);
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-clients {
+    padding: rem(50) 0 0;
+    margin: 0 0 rem(90);
+  }
 }

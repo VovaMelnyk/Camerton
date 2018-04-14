@@ -118,19 +118,17 @@
   }
 
   .quote__text {
-    font-size: rem(24);
     margin: 0 0 1.75rem;
   }
 
-  .section__coach {
+  .coach {
     display: flex;
-    margin: 0 0 rem(95);
   }
 
   .coach__face {
     display: block;
     position: relative;
-    top: rem(24);
+    top: rem(32);
     flex-basis: 60%;
     border-radius: 0 .625rem .625rem 0;
 
@@ -143,6 +141,13 @@
     padding: rem(50) 5.375rem rem(95) rem(40);
     border-radius: rem(10) 0 0 rem(10);
   }
+  .invite {
+    padding: rem(90) 0;
+
+    &__btn {
+      width: 50%;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -152,12 +157,18 @@
 
   .coach__quote {
 
-    padding: 3.125rem rem(160) rem(95) rem(72);
+    padding: rem(150) rem(160) rem(100) rem(72);
   }
 
   .quote__text {
     font-size: rem(24);
     margin: 0 0 rem(20);
+  }
+  .text-up {
+    font-size: rem(24);
+  }
+  .invite {
+    padding: rem(150) 0 rem(50);
   }
 
   .invite__body {

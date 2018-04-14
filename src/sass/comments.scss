@@ -1,13 +1,22 @@
+.slick {
+  -webkit-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
+  -moz-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
+  box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
+  margin: rem(24) auto rem(30);
+}
+.slick-container {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: rem(975);
+}
 .comments {
   margin: auto;
   padding: 0 0 rem(45) 0;
 
   &__box {
     padding: rem(25) rem(20);
-    margin: rem(24) auto rem(30);
-    -webkit-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
-    -moz-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
-    box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
+
   }
 
   &__title {
@@ -31,13 +40,30 @@
     }
   }
 
+  .prev, .next {
+    position: absolute;
+  }
+
+  .prev {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .next {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
   &__btn-direction {
     outline: none;
-    display: none;
+    //display: none;
     margin: 0 auto;
-    padding: rem(16) rem(29.696);
+    width: rem(50);
+    height: rem(50);
     font-family: $affect;
-    font-size: rem(49);
+    font-size: rem(20);
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -70,7 +96,7 @@
 
   &__info {
     align-self: center;
-    flex-basis: 80%;
+    //flex-basis: 80%;
   }
 
   &__sub-name {
@@ -93,9 +119,10 @@
 
 @media (min-width: 768px) {
   .comments {
-
+    padding: 0 0 rem(90);
     &__btn {
-      width: 100%;
+      width: 45%;
+      max-width: rem(354);
     }
 
     &__box {
@@ -105,11 +132,23 @@
   }
 
   .client {
-    width: 49%;
+    width: 80%;
     margin: auto;
 
     &__sub-title {
       font-size: rem(16);
     }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .client {
+    //width: 61%;
+    max-width: rem(513);
+  }
+
+  .client__sub-title {
+    font-size: rem(24);
   }
 }

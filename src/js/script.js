@@ -41,3 +41,44 @@ function stickyFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+// slick
+
+$(document).ready(function(){
+  $('.slick').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    // responsive: [
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       infinite: true,
+    //       // dots: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 320,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }]
+});
+});

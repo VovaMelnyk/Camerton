@@ -89,19 +89,20 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: rem(76);
+    padding: rem(90) 0 0;
 
     &__article-first {
       margin-bottom: 0;
       padding: rem(35) rem(30) rem(50);
-      flex-basis: 45%;
+      flex-basis: 47%;
     }
     &__title-white {
-      font-size: 1.3rem;
+      font-size: rem(16);
     }
 
     &__article-second {
       //padding: rem(50) 0;
-      flex-basis: 45%;
+      flex-basis: 47%;
     }
     &__btn {
       width: 80%;
@@ -136,6 +137,14 @@
       font-size: rem(18);
     }
   }
+
+  .in-end__sub-title {
+    font-size: rem(24);
+  }
+
+  .in-end__title-white {
+    font-size: rem(24);
+  }
 }
 
 // секция номмер 2
@@ -166,7 +175,7 @@
 
 @media (min-width: 768px) {
   .be-usefull {
-
+    margin-bottom: rem(90);
     &__box {
       display: flex;
       justify-content: space-between;
@@ -187,7 +196,7 @@
 @media (min-width: 1200px) {
 
   .be-usefull {
-
+    margin-bottom: rem(150);
     &__title {
       margin-bottom: rem(132);
     }

@@ -27,7 +27,7 @@
   //display: flex;
   //align-content: space-around;
 
-  &__logo {
+  .logo {
     flex-basis: 100%;
   }
 
@@ -39,16 +39,17 @@
     //margin: 3rem auto;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: rem(16);
+    color: $white;
   }
   &__span {
     display: block;
-    font-size: 1.3rem;
+    font-size: rem(16);
   }
 
   &__btn {
-    width: 100%;
-    font-size: rem(11.9);
+    max-width: rem(350);
+    font-size: rem(11);
   }
 }
 
@@ -73,7 +74,7 @@
 
     &__btn {
       width: 60%;
-      font-size: rem(18);
+      font-size: rem(15);
     }
     &__title {
       font-size: rem(36);

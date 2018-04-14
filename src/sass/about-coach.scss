@@ -72,6 +72,7 @@
 
 @media (min-width: 768px) {
   .about-coach {
+    display: flex;
     flex-direction: row;
     padding: 0;
 
@@ -84,8 +85,16 @@
     }
 
     &__box {
-      padding-top: rem(30);
+      padding-top: rem(60);
       flex-basis: 50%;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__name {
+      text-align: left;
     }
 
     &__item {
