@@ -56,7 +56,9 @@
 </div>
 <div class="wrapper">
   <div class="container">
-    <section class="office">
+    <section class="office" id="office">
+      <a href="#office" class="arrow-down-first">
+      </a>
       <h2 class="title office__title">Вы в офисе - всё в порядке. Только вы за порог - и <span
         class="orange">начинается</span> …</h2>
       <div class="office__box-article">
@@ -166,7 +168,7 @@
 </div>
 <div class="wrapper">
   <div class="container">
-    <section class="invite">
+    <section class="invite" id="invite">
       <div class="invite__header">
         <h2 class="title title__center">Приглашаю вас на свой практический тренинг
           «<span class="orange">Сильная команда для бизнеса</span>»</h2>
@@ -213,6 +215,8 @@
   <div class="container">
     <!--padding for section not for wrapper-->
     <section class="plot" id="plot">
+      <a href="#plot" class="arrow-down-first">
+      </a>
       <h2 class="title plot__title"><span class="orange plot__span">Программа </span>тренинга</h2>
 
       <div class="plot__body">
@@ -410,7 +414,7 @@
       <img src="img/about-coach.png" alt="" class="about-coach__img">
       <div class="about-coach__box">
         <h2 class="title about-coach__title">
-          <span class="about-coach--white">тренинг</span>
+          <span class="about-coach--white-title">тренинг</span>
           <span class="orange">ведет</span>
         </h2>
         <p class="about-coach__name sub-title">
@@ -446,7 +450,9 @@
 </div>
 <div class="wrapper">
   <div class="container">
-    <section class="our-clients">
+    <section class="our-clients" id="our-clients">
+      <a href="#our-clients" class="arrow-down-first">
+      </a>
       <ul class="our-clients__menu">
         <li class="our-clients__item colgate"></li>
         <li class="our-clients__item stb"></li>
@@ -479,8 +485,8 @@
               работает на группу, на ваши задачи, цели и планы.</p>
             <p class="text comments__text">Он не спасает себя через других людей. Он протягивает руку вам. Сильный,
               целостный и глубокий тренер, которому есть что отдать. Гараздо больше, чем можно ожидать. Мечту. Второе
-              дыхание. Желание полета</p>
-            <div class="client">
+              дыхание.  Желание полета. Картинку маршрута. И крылья. Ну что вам еще надо, чтобы взлететь?"</p>
+            <div class="client client--center">
               <picture>
                 <source srcset="img/client@2x.jpg 2x, img/client.jpg 1x">
                 <img class="client__img" src="img/client.jpg" alt="client">
@@ -492,23 +498,67 @@
               </div>
             </div>
           </div>
-          <div class="comments__box">
-            <p class="text">"Так получилось, что по роду своей деятельности я общаюсь со многими тренерами и
-              психологами. У многих из низ есть одна существенная сложность - не справившись с собственными проблемами,
-              они пытаются решить их через группу. Поработав с Павлом, я увидела человкека, который целиком и полностью
-              работает на группу, на ваши задачи, цели и планы.</p>
-            <p class="text comments__text">Он не спасает себя через других людей. Он протягивает руку вам. Сильный,
-              целостный и глубокий тренер, которому есть что отдать. Гараздо больше, чем можно ожидать. Мечту. Второе
-              дыхание. Желание полета</p>
-            <div class="client">
-              <picture>
-                <source srcset="img/client@2x.jpg 2x, img/client.jpg 1x">
-                <img class="client__img" src="img/client.jpg" alt="client">
-              </picture>
-              <div class="client__info">
-                <h3 class="sub-title client__sub-title">елена юзькова</h3>
-                <p class="text client__sub-name">генеральный директор<span class="client__span">"эпоха интернационального образования"</span>
-                </p>
+          <div class="comments__box ">
+            <div class="comments__sub-box">
+              <div class="box">
+                <p class="text comments__text">“Був на різних бізнес-тренінгах і сам регулярно проводжу їх для своєї команди, Павло - один з кращих тренерів в Україні, він з легкістю створює атмосферу, в якій зміни відбуваються вже на самому заході.”</p>
+                <div class="client">
+                  <picture>
+                    <source srcset="img/caruk@2x.jpg 2x, img/caruk@1x.jpg 1x">
+                    <img class="client__img" src="img/caruk@1x.jpg" alt="client">
+                  </picture>
+                  <div class="client__info">
+                    <h3 class="sub-title client__sub-title">павел царук</h3>
+                    <p class="text client__sub-name">глава правления <span class="client__span">страховой группы ТАС</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <p class="text comments__text">“Тренер - тонко-чувствующий квалифицированный психолог направляет участников к осознанию себя корректно, с уважением и любовью.”</p>
+                <div class="client">
+                  <picture>
+                    <source srcset="img/glushenko@2x.jpg 2x, img/glushenko@1x.jpg 1x">
+                    <img class="client__img" src="img/glushenko@1x.jpg" alt="client">
+                  </picture>
+                  <div class="client__info">
+                    <h3 class="sub-title client__sub-title">сергей глущенко</h3>
+                    <p class="text client__sub-name">бизнесмен, екс-заместитель<span class="client__span"> Министра молодежи и спорта Украины</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments__box ">
+            <div class="comments__sub-box">
+              <div class="box">
+                <p class="text comments__text">“Все супер! Просто, доступно, без воды. Особенно понравилась работа тренера с аудиторией - структурировано и по существу.”</p>
+                <div class="client">
+                  <picture>
+                    <source srcset="img/gavriluk@2x.jpg 2x, img/gavriluk@1x.jpg 1x">
+                    <img class="client__img" src="img/gavriluk@1x.jpg" alt="client">
+                  </picture>
+                  <div class="client__info">
+                    <h3 class="sub-title client__sub-title">юрий гаврилюк</h3>
+                    <p class="text client__sub-name">предприниматель,<span class="client__span">владелец компании Lite Print</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <p class="text comments__text">“Очень мало тренеров умеют прикоснуться к душе, помочь занырнуть в свою глубину и достать оттуда самое важное. Павел умеет”</p>
+                <div class="client">
+                  <picture>
+                    <source srcset="img/kovalenko@2x.jpg 2x, img/kovalenko@1x.jpg 1x">
+                    <img class="client__img" src="img/kovalenko@1x.jpg" alt="client">
+                  </picture>
+                  <div class="client__info">
+                    <h3 class="sub-title client__sub-title">елена коваленко</h3>
+                    <p class="text client__sub-name">менеджер проектов <br> FunEra Project,<span class="client__span">сеть ресторанов Желток, Банка, Pizza Chelentano</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -522,7 +572,9 @@
 </div>
 <div class="wrapper wrapper--format">
   <div class="container">
-    <section class="format">
+    <section class="format" id="format">
+      <a href="#format" class="arrow-down-first">
+      </a>
       <h2 class="title title--white">Формат и стоимость</h2>
       <div class="format__body">
         <div class="format__info">

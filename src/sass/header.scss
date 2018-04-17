@@ -124,6 +124,9 @@
 .sticky + .header__middle {
   padding: rem(300) 0 0;
 }
+.sticky ~ .header__bottom {
+  padding: rem(40) 0 rem(40);
+}
 
 @media (min-width: 768px) {
 

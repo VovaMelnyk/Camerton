@@ -136,3 +136,16 @@ img {
 }
 
 
+.arrow-down-first {
+  width: rem(60);
+  height: rem(60);
+  background-image: url(../img/down-arrow.png);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: $white;
+}

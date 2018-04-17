@@ -7,6 +7,7 @@
   background-attachment: fixed;
   border-radius: rem(10);
   padding: rem(45) rem(16);
+  position: relative;
 
   & > .title--white {
     color: $white;
