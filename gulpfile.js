@@ -103,7 +103,7 @@ gulp.task('images', () =>
 
 // Таск копирования всех шрифтов из папки fonts в build/fonts
 gulp.task('fonts', () =>
-  gulp.src('./src/fonts/**/*.{woff,woff2}').pipe(gulp.dest('./build/fonts')),
+  gulp.src('./src/fonts/**/*.{woff,woff2,otf}').pipe(gulp.dest('./build/fonts')),
 );
 gulp.task ('js', () => {
   return gulp.src('./src/js/**/*.js')
