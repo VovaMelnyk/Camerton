@@ -24,7 +24,7 @@
     text-transform: uppercase;
     text-align: center;
     color: $white;
-    border: rem(2) solid $orange;
+    border: rem(1) solid $orange;
     border-radius: rem(40);
     background: transparent;
   }
@@ -220,7 +220,7 @@
     }
     &__title {
       margin: 0 0 rem(65);
-      font-size: rem(58);
+      font-size: rem(66);
 
     }
     &__sub-title {
@@ -231,6 +231,9 @@
     }
     &__date {
       width: rem(300);
+    }
+    &__bottom {
+      width: rem(574);
     }
 
     &--btn {
