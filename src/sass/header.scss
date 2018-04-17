@@ -36,7 +36,7 @@
     align-items: center;
   }
   &__location {
-    font-size: rem(10);
+    font-size: rem(14);
     color: $white;
     text-align: center;
     margin: 0 0 rem(20);
@@ -49,9 +49,9 @@
   }
   &__sub-title {
     color: $white;
-    font-size: rem(10);
+    font-size: rem(12);
     text-align: center;
-    line-height: rem(15);
+    line-height: rem(18);
   }
   &__date {
     margin: 0 auto rem(20);
@@ -134,7 +134,7 @@
       flex-basis: 29%;
     }
     &__link {
-      font-size: rem(11);
+      font-size: rem(12);
     }
   }
   .phone {
@@ -151,6 +151,7 @@
     &__top {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
     &__top-right {
       display: flex;
