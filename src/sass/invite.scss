@@ -182,13 +182,16 @@
 
   .body__charter {
     flex-basis: 25%;
-    padding: 0 rem(7);
     margin: 0;
 
     //&:nth-last-child(-n+4) {
     //  margin: 0;
     //}
   }
+  .body__charter:nth-child(3) {
+    padding: 0 rem(5);
+  }
+
 
   .charter__icon {
     margin: 0 auto 1.9375rem;
