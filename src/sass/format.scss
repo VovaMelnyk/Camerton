@@ -1,3 +1,4 @@
+
 .format {
   background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/DSC_8224.jpg);
   background-size: cover;
@@ -36,6 +37,8 @@
     & > .text {
       color: $white;
       padding-left: rem(10);
+      font-family: $proximaThin;
+      letter-spacing: 0.5px;
 
       & > .orange {
         font-weight: 700;
@@ -48,13 +51,14 @@
     & > .text {
       color: $white;
       padding-left: rem(10);
+      font-family: $proximaThin;
+      letter-spacing: 0.5px;
     }
 
     & > .btn {
       font-size: rem(12);
       margin-top: rem(20);
       padding: rem(15) rem(30);
-      width: rem(96);
     }
 
   }
@@ -177,7 +181,7 @@
     }
 
     &__pay {
-      flex-basis: prc(360, 1140);
+      flex-basis: prc(410, 1140);
       padding: rem(50) rem(20) rem(30);
 
       & > .sub-title {
@@ -200,6 +204,7 @@
 
       & > .btn {
         padding: rem(15) rem(30);
+        font-size: rem(18);
       }
     }
   }
@@ -211,18 +216,11 @@
   }
 
   .format__price {
-    font-size: rem(43);
+    font-size: rem(48);
   }
   .format__pay>.btn {
-    font-size: rem(15);
-  }
-  .ford__quote>.text {
-    font-size: rem(32);
-    line-height: rem(42);
-  }
-  .ford>.btn {
-    width: rem(390);
-    font-size: rem(15);
-    line-height: rem(20);
+    font-size: rem(18);
+    padding-left: rem(30);
+    padding-right: rem(30);
   }
 }

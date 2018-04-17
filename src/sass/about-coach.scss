@@ -24,6 +24,7 @@
 
   &--white {
     color: $white;
+    font-family: $proximaThin;
   }
 
   &__title {
@@ -125,7 +126,10 @@
 @media (min-width: 1200px) {
   .about-coach {
     &__box {
-      flex-basis: 47%;
+      flex-basis: 53%;
     }
+  }
+  .about-coach__name {
+    font-size: rem(30);
   }
 }

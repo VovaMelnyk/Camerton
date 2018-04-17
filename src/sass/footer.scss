@@ -1,3 +1,6 @@
+.ford__quote>.text {
+  font-family: $proximaReg;
+}
 .wrapper-img {
   &--footer {
     min-height: 91vh;
@@ -75,7 +78,22 @@
 @media (min-width: 1200px) {
   .ford {
     &__quote {
-      width: prc(656, 1140);
+      width: prc(700, 1140);
     }
+  }
+  .ford__quote>.text {
+    font-size: rem(36);
+    line-height: rem(42);
+  }
+  .ford>.btn {
+    width: rem(450);
+    font-size: rem(18);
+    line-height: rem(24);
+    //font-weight: 100;
+    font-family: $proximaReg;
+    letter-spacing: 0.8px;
+    padding-right:rem(45);
+    padding-left:rem(45);
+    border-radius: rem(50);
   }
 }
