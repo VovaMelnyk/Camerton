@@ -1,5 +1,5 @@
 .wrapper--header {
-  padding: rem(12) 0 rem(70);
+  min-height: 100vh;
   background-color: #383835;
   background-image: url("../img/canoe.jpg");
   background-position: center;
@@ -9,8 +9,11 @@
 }
 
 .header {
-
+  min-height: 100vh;
   padding: 0 0 rem(16) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   &__application {
     display: inline-block;
     margin: 0 auto;
@@ -29,8 +32,8 @@
     text-align: center;
   }
   &__top {
-    margin: 0 0 rem(48);
     transition: 0.5s;
+    align-items: center;
   }
   &__location {
     font-size: rem(10);
@@ -49,9 +52,6 @@
     font-size: rem(10);
     text-align: center;
     line-height: rem(15);
-  }
-  &__middle {
-    margin: 0 0 rem(40);
   }
   &__date {
     margin: 0 auto rem(20);
@@ -126,9 +126,7 @@
 }
 
 @media (min-width: 768px) {
-  .wrapper--header {
-    padding: rem(26) 0 rem(100);
-  }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -153,7 +151,6 @@
     &__top {
       display: flex;
       justify-content: space-between;
-      margin: 0 0 rem(120);
     }
     &__top-right {
       display: flex;
@@ -170,7 +167,7 @@
     &--btn {
       font-size: rem(14);
       padding: rem(12) rem(16);
-      width: 25%;
+      width: 55%;
       margin: 0;
     }
     &__sub-title {
@@ -187,9 +184,6 @@
     &__location {
       font-size: rem(16);
       margin: 0 0 rem(32);
-    }
-    &__middle {
-      margin: 0 0 rem(80);
     }
     &__bottom {
       display: flex;
@@ -208,9 +202,6 @@
 }
 
 @media (min-width: 1200px) {
-  .wrapper--header {
-    padding: rem(26) 0 rem(134);
-  }
   .header {
     &__application {
       padding: rem(16) rem(22);

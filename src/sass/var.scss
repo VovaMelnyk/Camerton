@@ -14,7 +14,8 @@ $white: #fff;
 $black: #000;
 
 $affect: "Affect", sans-serif;
-$proxima: "Proxima Nova", sans-serif;
+$proximaThin: "Proxima Nova Thin", sans-serif;
+$proximaReg: "Proxima Nova Regular", sans-serif;
 
 @mixin bg-img {
   background-repeat: no-repeat;
@@ -22,3 +23,6 @@ $proxima: "Proxima Nova", sans-serif;
   background-position: center center;
   background-attachment: fixed;
 }
+
+
+

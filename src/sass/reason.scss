@@ -39,6 +39,8 @@
   .reason-box {
     display: flex;
     justify-content: space-between;
+    min-height: rem(364);
+
   }
   .list {
     margin-bottom: 0;
@@ -52,10 +54,27 @@
   }
 
   .sub-title--big {
-    font-size: rem(30)
+    font-size: rem(30);
+    margin-bottom: 50px;
   }
   .list {
     padding: 0;
+    flex-basis: 27%;
+    &__img {
+      margin-bottom: 40px;
+    }
+    &:nth-child(2) {
+      flex-basis:29.6%;
+    }
+    &:nth-child(3) {
+      flex-basis: 34%;
+      & > .list__img {
+        margin-bottom: 35px;
+      }
+      & > .sub-title--big {
+        margin-bottom: 25px;
+      }
+    }
 
     &__down {
       align-self: flex-end;
