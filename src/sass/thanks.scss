@@ -17,22 +17,24 @@
 }
 
 .thanks {
-  align-content: space-around;
-  flex-wrap: wrap;
-  justify-content: center;
-  display: flex;
+  // align-content: space-around;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // display: flex;
   min-height: 100vh;
   margin: auto;
   //transform: translate(50%, 50%);
   //display: flex;
   //align-content: space-around;
-
+  padding: rem(65) 0 rem(40);
   .logo {
     flex-basis: 100%;
   }
 
   &__title {
     text-align: center;
+    font-family: $affect;
+    margin-bottom: rem(30);
   }
   &__text {
     flex-basis: 100%;
@@ -41,25 +43,25 @@
     text-align: center;
     font-size: rem(16);
     color: $white;
+    font-family: $affect;
+    margin-bottom: rem(40);
   }
   &__span {
     display: block;
     font-size: rem(16);
+    font-family: $affect;
   }
 
   &__btn {
-    max-width: rem(350);
     font-size: rem(11);
+    margin: 0 auto rem(50);
+    width:rem(230);
   }
 }
 
 @media (min-width: 480px) {
   .thanks {
 
-    &__btn {
-      width: 70%;
-      //font-size: rem(17);
-    }
     &__text {
       font-size: 1.1rem;
     }
@@ -71,17 +73,20 @@
 
 @media (min-width: 768px) {
   .thanks {
-
+    padding: rem(110) 0 rem(80);
     &__btn {
-      width: 60%;
       font-size: rem(15);
+      width: rem(300);
+      margin-bottom: rem(60);
     }
     &__title {
       font-size: rem(36);
+      margin-bottom: rem(40);
     }
     &__text {
       //margin: rem(64) auto rem(85);
       font-size: rem(20);
+      margin-bottom: rem(60);
     }
     &__span {
       font-size: rem(20);
@@ -92,9 +97,7 @@
 @media (min-width: 960px) {
   .thanks {
 
-    &__btn {
-      width: 45%;
-    }
+
     &__title {
       font-size: rem(66);
     }
@@ -109,9 +112,22 @@
 
 @media (min-width: 1200px) {
     .thanks {
-
+      padding: rem(175) 0 rem(110);
       &__btn {
-        width: 35%;
+        font-size: rem(18);
+        margin: 0 auto rem(90);
+        width: rem(350);
+      }
+      &__title {
+        font-size: rem(66);
+        margin-bottom: rem(60);
+      }
+      &__text {
+        font-size: rem(24);
+        margin-bottom: rem(90);
+      }
+      &__span {
+        font-size: rem(24);
       }
     }
 }
