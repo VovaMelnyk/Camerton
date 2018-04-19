@@ -24,7 +24,7 @@
     text-transform: uppercase;
     text-align: center;
     color: $white;
-    border: rem(2) solid $orange;
+    border: rem(1) solid $orange;
     border-radius: rem(40);
     background: transparent;
   }
@@ -36,7 +36,7 @@
     align-items: center;
   }
   &__location {
-    font-size: rem(10);
+    font-size: rem(14);
     color: $white;
     text-align: center;
     margin: 0 0 rem(20);
@@ -49,9 +49,9 @@
   }
   &__sub-title {
     color: $white;
-    font-size: rem(10);
+    font-size: rem(12);
     text-align: center;
-    line-height: rem(15);
+    line-height: rem(18);
   }
   &__date {
     margin: 0 auto rem(20);
@@ -124,6 +124,9 @@
 .sticky + .header__middle {
   padding: rem(300) 0 0;
 }
+.sticky ~ .header__bottom {
+  padding: rem(40) 0 rem(40);
+}
 
 @media (min-width: 768px) {
 
@@ -134,7 +137,7 @@
       flex-basis: 29%;
     }
     &__link {
-      font-size: rem(11);
+      font-size: rem(12);
     }
   }
   .phone {
@@ -151,6 +154,7 @@
     &__top {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
     &__top-right {
       display: flex;
@@ -206,7 +210,7 @@
     &__application {
       padding: rem(16) rem(22);
       font-size: rem(18);
-      border: rem(3) solid $orange;
+      border: rem(1) solid $orange;
       flex-basis: 30%;
     }
     &__top-right {
@@ -220,7 +224,7 @@
     }
     &__title {
       margin: 0 0 rem(65);
-      font-size: rem(58);
+      font-size: rem(66);
 
     }
     &__sub-title {
@@ -231,6 +235,9 @@
     }
     &__date {
       width: rem(300);
+    }
+    &__bottom {
+      width: rem(574);
     }
 
     &--btn {

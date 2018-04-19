@@ -4,6 +4,7 @@
 }
 
 .plot {
+  position: relative;
   padding: rem(45) 0;
   &__container {
     &--top {
@@ -15,7 +16,6 @@
       flex-direction: column-reverse;
     }
   }
-
 
   &__title {
     color: $white;
@@ -67,7 +67,6 @@
     }
   }
 
-
   &__list {
     margin: 0 auto rem(34);
   }
@@ -116,8 +115,6 @@
 
 }
 
-
-
 @media (min-width: 480px) {
   .plot {
     &__span {
@@ -127,14 +124,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
   .plot {
@@ -153,35 +142,34 @@
       }
     }
 
-  &__block {
-    &--motivation {
-      flex-basis: 56%;
+    &__block {
+      &--motivation {
+        flex-basis: 56%;
+      }
+
+      &--practice {
+        flex-basis: 57%;
+      }
+
     }
 
-    &--practice {
-      flex-basis: 57%;
-    }
-
-  }
-
-  &__image-block {
-    flex-basis: 42%;
-    align-self: center;
-    padding: rem(40) 0 0;
-
-    &--second {
-      flex-basis: 40%;
-      margin: 0;
+    &__image-block {
+      flex-basis: 42%;
       align-self: center;
-    }
-  }
+      padding: rem(40) 0 0;
 
+      &--second {
+        flex-basis: 40%;
+        margin: 0;
+        align-self: center;
+      }
+    }
 
     &__list {
       margin-bottom: 0;
     }
     &__picture {
-       margin: 0;
+      margin: 0;
       &--first {
         position: relative;
         z-index: 2;
@@ -189,8 +177,8 @@
 
       &--second {
         position: relative;
-        top:  rem(-40);
-        left: rem(-50) ;
+        top: rem(-40);
+        left: rem(-50);
         z-index: 1;
       }
 
@@ -216,10 +204,9 @@
   }
 }
 
-
-@media (min-width: 960px)  {
+@media (min-width: 960px) {
   .plot {
-   padding: 5.375rem 0;
+    padding: 5.375rem 0;
     &__item {
       width: 90%;
     }
@@ -241,7 +228,7 @@
 
     &__block {
       &--motivation {
-        flex-basis: 58%;
+        flex-basis: 61%;
       }
 
       &--practice {
@@ -250,7 +237,7 @@
     }
 
     &__image-block {
-      flex-basis: 37%;
+      flex-basis: 35%;
       align-self: flex-start;
       padding: 0;
 
@@ -267,8 +254,8 @@
       }
 
       &--second {
-        top:  rem(0);
-        left: rem(-50) ;
+        top: rem(0);
+        left: rem(-50);
       }
 
       &--third {
@@ -281,9 +268,14 @@
     }
 
     &__sub-title {
-        font-size: rem(18);
-      }
-
+      font-size: rem(18);
     }
+
   }
+  .plot__text, .plot__item {
+    font-family: $proximaThin;
+    font-size: rem(20);
+    line-height: rem(28);
+  }
+}
 

@@ -2,7 +2,6 @@
   text-align: center;
   margin-bottom: rem(50);
   padding: rem(45) 0 0;
-
   // первый контейнер в котоом картинка+ тайтл+сабтекст+задний фон
   &__article-first {
     margin-bottom: rem(76);
@@ -50,7 +49,8 @@
   }
 
   &__normal {
-    font-weight: 400;
+    //font-weight: 400;
+    font-family: $proximaReg;
   }
 
   // контейнер справа с кнопкой
@@ -114,7 +114,7 @@
 @media (min-width: 960px) {
   .in-end {
     &__article-second {
-      flex-basis: 46%;
+      flex-basis: 43%;
 
     }
     &__btn {
@@ -131,6 +131,7 @@
 
     &__article-first {
       padding: rem(105) 5rem rem(152);
+      flex-basis: 53%;
     }
     &__btn {
       width: 86%;
@@ -140,10 +141,12 @@
 
   .in-end__sub-title {
     font-size: rem(24);
+    font-family: $proximaThin;
   }
 
   .in-end__title-white {
     font-size: rem(24);
+    font-family: $proximaThin;
   }
 }
 
@@ -185,7 +188,7 @@
     }
 
     &__article {
-      flex-basis: 32%;
+      flex-basis: 31%;
     }
     &__title {
       margin-bottom: rem(76);
@@ -198,7 +201,8 @@
   .be-usefull {
     margin-bottom: rem(150);
     &__title {
-      margin-bottom: rem(132);
+      max-width: rem(886);
+      margin: 0 auto rem(132);
     }
   }
 }

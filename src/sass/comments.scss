@@ -14,6 +14,10 @@
   margin: auto;
   padding: 0 0 rem(45) 0;
 
+  &__sub-box {
+
+  }
+
   &__box {
     padding: rem(25) rem(20);
 
@@ -63,7 +67,7 @@
     width: rem(50);
     height: rem(50);
     font-family: $affect;
-    font-size: rem(20);
+    font-size: rem(32);
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -79,16 +83,21 @@
 
 .client {
   display: flex;
+  align-items: center;
   //align-items: center;
-  justify-content: space-between;
+  //justify-content: space-between;
 
   &__sub-title {
     font-size: rem(15);
   }
-
+  &--center {
+    justify-content: center;
+  }
   &__img {
     border-radius: 50%;
-    width: 80%;
+    width: rem(70);
+    height: rem(70);
+    max-width: rem(70);
     -webkit-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
     -moz-box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
     box-shadow: 0 1.125rem 1.225rem 0.25rem rgba(0,0,0,.21);
@@ -96,6 +105,7 @@
 
   &__info {
     align-self: center;
+    margin-left: rem(16);
     //flex-basis: 80%;
   }
 
@@ -125,27 +135,50 @@
       max-width: rem(354);
     }
 
+    &__sub-box {
+      display: flex;
+      justify-content: center;
+     & .box {
+        flex-basis: 50%;
+        border-left: rem(2) solid #dadada;
+        padding-left: rem(20);
+        &:first-child {
+          border: none;
+          padding: 0;
+          padding-right: rem(5);
+        }
+        & >.text {
+          margin-top: 0;
+        }
+      }
+
+    }
+
     &__box {
-      padding: rem(46) rem(120) rem(33) rem(110);
+      padding: rem(46) rem(48) rem(33) rem(48);
       margin: rem(24) auto rem(57);
     }
   }
 
   .client {
-    width: 80%;
-    margin: auto;
+    //width: 80%;
+    //margin: auto;
 
     &__sub-title {
       font-size: rem(16);
     }
   }
 }
-
+@media (min-width: 960px) {
+  .comments__box {
+    padding: rem(46) rem(120) rem(33) rem(110);
+  }
+}
 @media (min-width: 1200px) {
 
   .client {
     //width: 61%;
-    max-width: rem(513);
+    //max-width: rem(513);
   }
 
   .client__sub-title {
