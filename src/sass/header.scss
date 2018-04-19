@@ -27,6 +27,11 @@
     border: rem(1) solid $orange;
     border-radius: rem(40);
     background: transparent;
+    &:hover {
+      //background: $orange;
+      background-image: linear-gradient(to top, #ff4c01, #e77921);
+
+    }
   }
   &__top-right {
     text-align: center;
@@ -82,7 +87,7 @@
 
 .phone {
   font-size: rem(16);
-  font-family: 'Myriad pro', sans-serif;
+  font-family: $affect;
   margin: rem(10) 0 rem(10);
   font-weight: 700;
 }
@@ -208,7 +213,7 @@
 @media (min-width: 1200px) {
   .header {
     &__application {
-      padding: rem(16) rem(22);
+      padding: rem(14) rem(22) rem(16);
       font-size: rem(18);
       border: rem(1) solid $orange;
       flex-basis: 30%;

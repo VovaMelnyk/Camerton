@@ -49,11 +49,11 @@ $(document).ready(function(){
   $('.slick').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     // responsive: [

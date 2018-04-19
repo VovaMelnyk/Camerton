@@ -44,6 +44,7 @@
       & > .orange {
         font-weight: 700;
         font-size: rem(24);
+        font-family: $affect;
       }
     }
   }
@@ -57,9 +58,16 @@
     }
 
     & > .btn {
-      font-size: rem(12);
+      font-size: rem(15);
       margin-top: rem(20);
-      padding: rem(15) rem(30);
+      padding: rem(15) rem(35);
+      background-image: linear-gradient(to top, transparent, transparent);
+      border: rem(1) solid $orange;
+      font-family: $proximaThin;
+      text-transform: lowercase;
+      &:hover {
+        background-image: linear-gradient(to top, #ff4c01, #e77921);
+      }
     }
 
   }
